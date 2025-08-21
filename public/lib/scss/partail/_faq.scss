@@ -1,0 +1,136 @@
+
+$bg: #000;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: $primary;
+
+.accordion {
+    .accordion-item {
+        background-color: transparent;
+      border-bottom: 1px solid $lightgray;
+      button[aria-expanded='true'] {
+        border-bottom: 1px solid $blue;
+      }
+    }
+    button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: $text;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: transparent;
+      outline: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        color: $blue;
+        &::after {
+          cursor: pointer;
+          color: $blue;
+          border: 1px solid $blue;
+        }
+      }
+      .accordion-title {
+        padding: 1em 1.5em 1em 2em;
+      }
+      .icon {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 0;
+        width: 22px;
+        height: 22px;
+        border: 1px solid;
+        border-radius: 22px;
+        &::before {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 9px;
+          left: 5px;
+          width: 10px;
+          height: 2px;
+          background: currentColor;
+        }
+        &::after {
+          display: block;
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 9px;
+          width: 2px;
+          height: 10px;
+          background: currentColor;
+        }
+      }
+    }
+    button[aria-expanded='true'] {
+      color: $blue;
+      .icon {
+        &::after {
+          width: 0;
+        }
+      }
+      + .accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+      }
+    }
+    .accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 2em 0;
+      }
+    }
+  }
+
+  .faq-section{
+    .faq-content{
+      height: 100%;
+      @include flex_align;
+      justify-content: center;
+      ul{
+        li{
+          transition: .3s ease-in;
+          margin-bottom: .4em;
+          i{
+            padding-right: .5em;
+          }
+          &:hover{
+            padding-left: .5em;
+            i{
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .faq-content-images{
+      height: 100%;
+      @include flex_align;
+      justify-content: center;
+      overflow: hidden;
+      &:hover{
+        img{
+          transform: scale(1.2) rotate(5deg);
+        }
+      }
+      img{
+        height: 100%;
+        width: auto;
+        transition: .5s ease-in-out;
+      }
+    }
+  }

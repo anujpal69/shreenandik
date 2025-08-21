@@ -1,0 +1,294 @@
+.page-header {
+
+    .heading {
+        span {
+            color: $primary;
+        }
+    }
+
+    ul {
+        gap: 30px;
+
+        li {
+            position: relative;
+
+            &:not(:last-of-type) {
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    right: -25px;
+                    transform: translateY(-50%);
+                    content: '';
+                    width: 20px;
+                    height: 2px;
+                    background-color: white;
+                }
+            }
+
+            a {
+                color: $white1;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.page-header-service{
+    background: url("./../../assets/images/home/pages/customerservice.webp");
+}
+
+.page-header-about {
+    background: url("./../../assets/images/home/pages/about.jpeg");
+}
+
+.page-header-team {
+    background: url("./../../assets/images/home/pages/team.webp");
+}
+
+.page-header-contact {
+    background: url("./../../assets/images/home/pages/contact-us.jpg");
+}
+
+.page-header-blog {
+    background: url("./../../assets/images/home/pages/blog.jpg");
+}
+
+.page-header-single-post {
+    background: url("./../../assets/images/home/pages/blog.jpg");
+
+    .post-title {
+        font-size: 4em;
+        @include laptop{
+            font-size: 3em;
+        }
+        @include tablet{
+            font-size: 2em;
+        }
+    }
+}
+
+.page-header-toc {
+    background: url("./../../assets/images/home/pages/terms-banner.jpg");
+}
+
+.page-header-privacy-policy {
+    background: url("./../../assets/images/home/pages/privacy-policy-banner.jpg");
+}
+
+.page-header-refund {
+    background: url("./../../assets/images/home/pages/refund.jpg");
+}
+
+
+.page-header-faq  {
+    background: url("./../../assets/images/home/pages/faq-banner.jpg");
+}
+
+
+.page-header {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.out-team-section {
+    background-color: $white1;
+
+    .team-card-item {
+        position: relative;
+        background: $black;
+
+        &:hover {
+            .card-img {
+
+                img {
+                    filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+                }
+            }
+        }
+
+        .background-overlay {
+            background-attachment: inherit;
+        }
+
+
+        // padding: 2em;
+        .card-body {
+            padding: 2em 2em;
+
+            h3 {
+                position: relative;
+                padding-left: .5em;
+                margin-bottom: .5em;
+
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: '';
+                    background: $white1;
+                    height: 100%;
+                    width: 5px;
+                }
+            }
+        }
+
+        .card-img {
+            text-align: end ;
+            img {
+                filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+                transition-duration: 0.5s;
+            }
+        }
+
+    }
+}
+
+.map-section {
+    line-height: 0;
+    iframe {
+        filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+
+        &:hover {
+            filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+        }
+    }
+}
+
+.single-post {
+    background-color: $bg_sr;
+
+    .single-post-content {
+        .date-content {
+            ul {
+                gap: 20px;
+
+                i {
+                    padding-right: .3em;
+                    color: $primary;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .body-content {
+            p {
+                line-height: 1.7em;
+                font-weight: 300;
+                margin-bottom: 1.5em;
+            }
+
+            .quote_right {
+                i {
+                    color: $primary;
+                    font-size: 60px;
+                    padding: 0 1em;
+                    @include laptop{
+                        font-size: 40px;
+                    }
+                    @include tablet{
+                        font-size: 30px;
+                    }
+                    @include mobile{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar-content {
+    background: url('./../../assets/images/home/pages/sidebar.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .overlay {
+        padding: 2em;
+
+        h4 {
+            font-weight: 600;
+        }
+
+        ul {
+            li {
+                margin-bottom: .8em;
+                font-weight: 700;
+
+                i {
+                    padding-right: .5em;
+                    color: $primary;
+                }
+
+                span {
+                    transition: .3s linear;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.toc_section {
+    // background: $black1;
+    background: $white1;
+
+
+    .policy-block {
+        box-shadow: 0 4px 32px 0 rgba(0, 0, 0, .02), 0 8px 64px 0 rgba(0, 0, 0, .08);
+        padding: 4em 0;
+        border: 1px solid #fff;
+        border-top-color:transparent ;
+        border-bottom-color:transparent ;
+            ul{
+                li{
+                    list-style-type: disc;
+                }
+            }
+            .roman li {
+                list-style-type: lower-roman;
+            }
+
+
+        strong {
+            color: $primary2;
+        }
+        h5{
+            margin-top: 1em;
+        }
+        h4{
+            font-weight: 600;
+        }
+        i,
+        h5,
+        h4,
+        li,
+        span,
+        p {
+            color: $black1;
+        }
+        p{
+            padding-left: .5em;
+            color: #444;
+        }
+    }
+}
+
+.error-page{
+    height: calc(100vh - 100px);
+    background:$bg_sr ;
+    .background-overlay{
+        background: url(./../../assets/images/home/Background-6.png);
+    }
+    .heading{
+        font-size: 250px;
+    }
+}

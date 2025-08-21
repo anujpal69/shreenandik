@@ -1,0 +1,190 @@
+.header {
+    background: $headerBg;
+    position: sticky;
+    top:0;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba($color: $black1, $alpha: .1);
+
+    nav {
+        padding: 0;
+
+        .header-logo {
+            max-width: 70px;
+
+            img {
+                width: 100%;
+                height: auto;
+
+                @include desktop-xl {
+                    width: 70px;
+                }
+            }
+        }
+
+        .collapse {
+            position: relative;
+        }
+
+        ul {
+            padding: 0 1em;
+
+            .nav-item {
+                transition: all .5s linear;
+
+                // padding: 1em 0;
+                .nav-link {
+                    padding: 1.5em 15px !important;
+                    font-weight: 600;
+                    line-height: 1em;
+                    font-size: 1.1em;
+                    color: $white;
+                    display: inline-block;
+                    @include laptop{
+                    padding: .7em 15px !important;
+                    }
+
+                    i {
+                        font-weight: normal;
+                        font-size: 11px;
+                    }
+
+                    i,
+                    &:hover {
+                        color: $primary2;
+                    }
+                }
+            }
+
+            .dropdown-list {
+                // position: static !important;
+                transition: all .5s linear;
+                @include laptop{
+                    position: relative;
+
+                }
+                ._dropdown-block {
+                    width: 100%;
+                    box-shadow: 0 10px 30px 0 rgba(45, 45, 45, .2);
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 9;
+                    padding: 2em 0;
+                    // border: 1px solid $white;
+                    border-top-color: transparent;
+                    -webkit-box-shadow: 0 10px 30px 0 rgba(45, 45, 45, .2);
+                    opacity: 0;
+                    display: none;
+                    // visibility: hidden;
+                    transition: transform .4s ease;
+                    background-color: rgba($color: $white1, $alpha: 1);
+                    @include laptop{
+                        position: static;
+    
+                    }
+                    li {
+                        padding: 0;
+
+                        &:not(:last-child) {
+                            margin-bottom: .4em;
+                            // border-bottom:1px solid $focus_color ;
+                        }
+
+                        .nav-link {
+                            img {
+                                height: 25px;
+                                padding-right: .5em;
+                                transition: .3s  linear;
+                            }
+
+                            color: $black1;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 40px;
+                            padding: 0 15px !important;
+
+                            @include laptop{
+                                padding: 0 0px !important;
+                                font-size: 15px;
+            
+                            }
+
+                            &:hover {
+
+                                img {
+                                    transform: rotateY(360deg) !important;
+                                }
+
+                                color:$primary;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    ._dropdown-block {
+                        opacity: 1;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        form {
+            a {
+                margin-right: 1em;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .header_collapse {
+        margin-bottom: 1em !important;
+    }
+}
+
+.header_contec_what{
+    // height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+    background: green;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:.2em .5em;
+    img{
+        animation: whatsapp 2s linear infinite;
+        width: 30px;
+    }
+}
+
+@keyframes whatsapp {
+    to{
+        transform: rotate(0);
+    }
+    from{
+        transform: rotate(-360deg);
+    }
+}
+
+
+.progress-bar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .35em;
+    z-index: 999;
+    border-radius: 0;
+  }
+  
+  .progress {
+    border-radius: 0;
+    height: 100%;
+    background: #FF001A;
+    width: 0%;
+    transition: width .05s ease 0s;
+  }

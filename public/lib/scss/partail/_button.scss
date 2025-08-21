@@ -1,0 +1,67 @@
+._button{
+    color: $primary;
+    background-color: #fff;
+    border:2px solid $primary;
+    border-radius: 0px ;
+    padding: 10px 30px ;
+    transition: .3s ;
+    font-weight: 600;
+    font-size: 1.1em;
+    @include tablet{
+        font-size: .9em;
+
+    }
+    &:hover{
+        transform: scale(0.9);
+        color: #fff;
+        background-color: $white;
+        border-color: $black;
+    }
+}
+
+._span{
+    color: $primary;
+    display: inline-block;
+}
+
+._button_black{
+    background-color: $black;
+    color: $white1;
+    &:hover{
+        transform: scale(0.99);
+        background-color: $white1;
+        color: $black;
+        border-color:transparent;
+    }
+}
+
+.mission_btn{
+    background-color: rgba($color: $black, $alpha:.80);
+    color: $primary;
+    border-color: $primary;
+    &:hover{
+      background-color: $white1;
+      color: $black;
+      border-color: $black;
+    }
+  }
+
+
+  .subscribe_btn{
+    border-color: transparent;
+    color: $black;
+  }
+
+  .themeBtn{
+    border-color: $primary2;
+    color: $primary2;
+  }
+  .primary2{
+    color: $primary2;
+  }
+
+  .get_start{
+    background-color: $black;
+    color: $white1;
+    border-color: transparent;
+  }

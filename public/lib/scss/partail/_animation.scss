@@ -1,0 +1,14 @@
+
+  @keyframes rippleAnimation {
+    70% {
+        -webkit-box-shadow: 0 0 0 var(--glow-size,15px) currentColor;
+        box-shadow: 0 0 0 var(--glow-size,15px) currentColor;
+        opacity: 0
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 currentColor;
+        box-shadow: 0 0 0 0 currentColor;
+        opacity: 0
+    }
+}

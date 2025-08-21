@@ -1,0 +1,295 @@
+::selection{
+  background: #FF001A;
+  color: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  width: .5em; 
+  scrollbar-color: red;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF001A;
+  // border-radius: 5px
+}
+
+.flex_center {
+  @include flex_center;
+}
+.flex_space {
+  @include flex_space;
+}
+
+.flex_column {
+  @include flex_column;
+}
+.flex_align {
+  @include flex_align;
+}
+.flex_align2 {
+  @include flex_align2;
+}
+.place_item {
+  @include place_item;
+}
+
+section{
+  background: $s_bg;
+  color: $white;
+}
+.nandik-bg{
+  background: transparent;
+}
+.nandik-sec {
+  width: 100%;
+  padding: 6em 1em;
+  position: relative;
+  @include desktop{
+    padding: 5em 0;
+  }
+  @include laptop{
+    padding: 4em 0;
+  }
+  @include mobile{
+    padding: 3em 0;
+  }
+}
+
+.overlay-block{
+  position: relative;
+}
+.background-overlay{
+  // background-image: url('./../../assets/images/home/Background-21.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.6;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.z_in{
+  position: relative;
+  z-index: 2;
+}
+.heading {
+  font-size: 5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  @include desktop-xl{
+    font-size: 4.5em;
+  }
+  @include desktop{
+    font-size: 4em;
+  }
+  @include mobile{
+    font-size: 2.5em;
+  }
+}
+
+.sub-text{
+  font-size: 1em;
+  font-weight: 600;
+}
+.title{
+  font-size: 4em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  @include desktop{
+    font-size: 3em;
+  }
+  @include mobile{
+    font-size: 2em;
+  }
+}
+.title2{
+    font-size: 2.7em;
+    line-height: 1.6em;
+    font-weight: 700;
+    @include desktop{
+     font-size: 2em;
+    }
+    @include mobile{
+      font-size: 1.8em;
+    }
+}
+.title3{
+  font-size: 2em;
+  font-weight: 600;
+  @include desktop{
+    font-size: 1.8em;
+   }
+}
+.title4{
+  font-size: 1.6em;
+  font-weight: 600;
+  @include desktop{
+    font-size: 1.2em;    
+  }
+}
+.Atext{
+  color: $des_c;
+  font-weight: normal;
+  font-size: 16px;
+  // padding-bottom: 1em;
+  font-family: 'poppins', sans-serif;
+  
+}
+.titleT{
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+p{
+  font-family: 'poppins', sans-serif;
+}
+.text{
+  font-family: 'poppins', sans-serif;
+    font-size: 1em;
+    color: $text_col;
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 14.4px;
+}
+._bold6{
+  font-weight: 600;
+}
+._bold5{
+  font-weight: 500;
+}
+._bold3{
+  font-weight: 300;
+}
+.designation{
+  font-size: 13px;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: .70);
+}
+
+input,textarea,select,button{
+  &:focus{
+    box-shadow: none !important;
+  }
+}
+.owl-theme .owl-dots{
+  transform: translateY(-33px) !important;
+  button{
+    span{
+      width: 6px !important;
+      height: 6px !important;
+      margin: 0 !important;
+    }
+  }
+}
+.col-handle{
+  @include desktop{
+      display: none;
+   }
+   @include laptop{
+    display: flex ; 
+   }
+
+}
+// .row-handle{
+//   @include laptop{
+//     flex-direction: column-reverse;
+//   }
+// }
+ ._handle{
+     flex-direction: column-reverse;
+ }
+
+.navbar-toggler{
+  border-color: $primary;
+  i{
+    color: $primary;
+    font-size: 22px;
+    margin-top: 3px;
+  }
+}
+
+.black1{
+  color: $black1;
+}
+
+.black2{
+  color: $black2;
+}
+
+.animated_text {
+  animation: colorChange 5s infinite; /* Change color every 5 seconds */
+}
+
+
+@keyframes colorChange {
+  0% {
+      color: $black1; /* Dark red */
+  }
+  25% {
+      color: $primary; /* Dark blue */
+  }
+  50% {
+      color:#860703 ; /* Dark green */
+  }
+  75% {
+      color: #CC6012; /* Dark orange */
+  }
+  100% {
+      color: #BF8A3C; /* Dark purple */
+  }
+}
+
+.animation_title{
+  position: relative;
+  padding-bottom: .7em;
+  display: inline-block;
+  &::before,&::after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 50%;
+    height: 1px;
+    background: $des_c;
+    transform: translateX(-50%);
+  }
+  &::before{
+    background-color: $primary;
+    width: 15px;
+    height: 15px;
+    bottom: -7.5px;
+    z-index: 999;
+    // animation: drag 2s linear infinite alternate;
+  }
+}
+@keyframes drag {
+    0%{
+      transform: translateX(-50%);
+    }
+    50%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+
+}
+
+._grid_item{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  place-items: center;
+}

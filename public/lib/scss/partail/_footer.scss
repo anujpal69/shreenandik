@@ -1,0 +1,85 @@
+footer{
+    background-color: #d9d9d9;
+    padding-bottom: 0 !important;
+    .nandik-footer-logo{
+        .nandik-img{
+            margin-bottom: 20px;
+        }
+        p{
+            color: $black1;
+            font-weight: 500;
+            
+        }
+    }
+    .nandik-widget {
+        .title3{
+            margin-bottom: 20px;
+            color: $primary2;
+        }
+        ul{
+            li{
+                display: flex;
+                gap: 10px;
+                i{
+                    color: $primary2;
+                    padding-right: 10px;
+                    line-height: inherit;
+                    display: inline-block;
+                }
+                a{
+                    color: $black1;
+                    display: block;
+                    margin-bottom: .2em;
+                    //  transition: all .4s ease;
+                     line-height: 1.8em;
+                     font-weight: 500;
+                    &:hover{
+                        color: $primary2;
+                    }
+
+                    span{
+                        color: $black1;
+                    }
+                }
+            }
+        }
+    }
+    .nandik-copyright{
+        border-top: 1px solid $black1;
+        .social-media-icon{
+            @include mobile{
+                text-align: center;
+                margin-bottom: 1.5em;
+            }
+            ul{
+                li{
+                   display: contents;
+                    gap: 20px;
+                    a{
+                        @include flex_center;
+                        width: 35px;
+                        height: 35px;
+                        background: $white1;
+                        border-radius: 100%;
+                        display: inline-flex;
+                        i{
+                            color: $primary2;
+                            &:hover{
+                                color: $black;
+                            }
+                        }
+                       
+                }
+            }
+        }
+    }
+    .copyright-text{
+        a,p{
+            color: $black1;
+        }
+        @include mobile{
+            text-align: center !important;
+        }
+    }
+    }
+}
