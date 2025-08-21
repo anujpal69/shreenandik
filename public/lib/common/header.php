@@ -65,7 +65,7 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
                         <!-- <li class="nav-item    "> <a class="nav-link" href="coming">Services</a></li> -->
                         <li class="nav-item dropdown-list">
