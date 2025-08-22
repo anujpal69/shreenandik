@@ -3,7 +3,7 @@
         <div class="row g-xxl-5 g-xl-2 pb-4">
             <div class="col-xl-3 col-lg-4 col-sm-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                 <div class="nandik-footer-logo">
-                    <a href="/" class="nandik-img"><img src="public/assets/images/home/logo2.png" alt="shreenandik"></a>
+                    <a href="index.php" class="nandik-img"><img src="public/assets/images/home/logo2.png" alt="shreenandik"></a>
                     <p class="text">Shreenandik Technologies: Transforming ideas into digital excellence with innovation
                         and quality.</p>
                 </div>
@@ -16,10 +16,10 @@
                         <div class="nandik-widget">
                             <h3 class="title3">Solutions</h3>
                             <ul>
-                                <li><a href="coming.php">IT Management</a></li>
+                                <li><a href="it-management.php">IT Management</a></li>
                                 <li><a href="coming.php">Cloud Services</a></li>
                                 <li><a href="ai-ml-solutions.php">Al & Ml</a></li>
-                                <li><a href="coming.php">Software Development</a></li>
+                                <li><a href="software-development.php">Software Development</a></li>
                             </ul>
                         </div>
                     </div>

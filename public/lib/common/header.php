@@ -57,7 +57,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand header-logo" href="/">
+                <a class="navbar-brand header-logo" href="index.php">
                     <img src="public/assets/images/home/logo2.png" alt="shreenandik">
                 </a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

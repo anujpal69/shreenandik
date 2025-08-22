@@ -3085,3 +3085,111 @@ footer .nandik-copyright .copyright-text a, footer .nandik-copyright .copyright-
     text-align: center !important;
   }
 }/*# sourceMappingURL=styles.css.map */
+
+/* Portfolio Section */
+    #portfolio {
+      padding: 60px 0;
+    }
+
+    /* Filter buttons */
+    #portfolio-flters {
+      padding: 0;
+      margin: 0 auto 40px auto;
+      list-style: none;
+      text-align: center;
+    }
+
+    #portfolio-flters li {
+      cursor: pointer;
+      margin: 5px;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      background: #fff;
+      border: 1px solid #0dcaf0;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+    }
+
+    #portfolio-flters li.active,
+    #portfolio-flters li:hover {
+      background: #0dcaf0;
+      color: #fff;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .portfolio-item {
+      position: relative;
+      margin: 10px;
+      flex: 0 0 30%;
+      overflow: hidden;
+      border-radius: 10px;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 0.6s ease;
+    }
+
+    .portfolio-item.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      transition: all 0.4s ease;
+    }
+
+    /* Hover Overlay */
+    .portfolio-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.4s;
+      background: rgba(13, 202, 240, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    .portfolio-item:hover .portfolio-btn {
+      opacity: 1;
+    }
+
+    .portfolio-btn i {
+      font-size: 50px;
+      color: #fff;
+      transform: scale(0.8);
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-btn:hover i {
+      transform: scale(1.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .portfolio-item {
+        flex: 0 0 48%;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .portfolio-item {
+        flex: 0 0 100%;
+      }
+    }

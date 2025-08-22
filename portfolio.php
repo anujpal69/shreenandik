@@ -5,8 +5,57 @@ include_once './public/lib/common/header.php';
 ?>
 
 
+<section>
+    <!-- Portfolio Start -->
+  <div class="container-fluid pt-5 pb-3" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-2">
+          <ul class="list-inline mb-4" id="portfolio-flters">
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".design">Design</li>
+            <li data-filter=".development">Development</li>
+            <li data-filter=".marketing">Marketing</li>
+          </ul>
+        </div>
+      </div>
 
-<section class="nandik-sec service_sec portfolio_sec ">
+      <div class="portfolio-container">
+        <div class="portfolio-item design">
+          <img src="./public/img/portfolio-1.jpg" alt="">
+          <div class="portfolio-btn"><i class="fa fa-plus"></i></div>
+        </div>
+
+        <div class="portfolio-item development">
+          <img src="./public/img/portfolio-2.jpg" alt="">
+          <div class="portfolio-btn"><i class="fa fa-plus"></i></div>
+        </div>
+
+        <div class="portfolio-item marketing">
+          <img src="./public/img/portfolio-3.jpg" alt="">
+          <div class="portfolio-btn"><i class="fa fa-plus"></i></div>
+        </div>
+
+        <div class="portfolio-item design">
+          <img src="./public/img/portfolio-4.jpg" alt="">
+          <div class="portfolio-btn"><i class="fa fa-plus"></i></div>
+        </div>
+
+        <div class="portfolio-item development">
+          <img src="./public/img/portfolio-5.jpg" alt="">
+          <div class="portfolio-btn"><i class="fa fa-plus"></i></div>
+        </div>
+
+        <div class="portfolio-item marketing">
+          <img src="./public/img/portfolio-6.jpg" alt="">
+          <div class="portfolio-btn"><i class="fa fa-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio End -->
+</section>
+  <section class="nandik-sec service_sec portfolio_sec ">
     <div class="container">
         <div class="case-header text-center  wow animate__animated animate__fadeInUp row">
             <div class="col-xl-10 offset-xl-1">
@@ -115,7 +164,7 @@ include_once './public/lib/common/header.php';
         </div>
 
     </div>
-</section>
+</section> 
 
 
 <!-- <section class="nandik-sec nandik-bg faq-section faq_bg">
@@ -184,3 +233,37 @@ include_once './public/lib/common/header.php';
 
 
 <?php include_once './public/lib/common/footer.php'; ?>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const filters = document.querySelectorAll("#portfolio-flters li");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    window.addEventListener("load", () => {
+        portfolioItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add("show");
+            }, index * 150);
+        });
+    });
+
+    filters.forEach(filter => {
+        filter.addEventListener("click", () => {
+            filters.forEach(el => el.classList.remove("active"));
+            filter.classList.add("active");
+
+            const filterValue = filter.getAttribute("data-filter");
+
+            portfolioItems.forEach(item => {
+                if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+                    item.style.display = "block";
+                    setTimeout(() => item.classList.add("show"), 50);
+                } else {
+                    item.classList.remove("show");
+                    setTimeout(() => item.style.display = "none", 400);
+                }
+            });
+        });
+    });
+});
+</script>
