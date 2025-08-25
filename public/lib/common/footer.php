@@ -17,7 +17,7 @@
                             <h3 class="title3">Solutions</h3>
                             <ul>
                                 <li><a href="it-management.php">IT Management</a></li>
-                                <li><a href="coming.php">Cloud Services</a></li>
+                                <li><a href="cloud-service.php">Cloud Services</a></li>
                                 <li><a href="ai-ml-solutions.php">Al & Ml</a></li>
                                 <li><a href="software-development.php">Software Development</a></li>
                             </ul>

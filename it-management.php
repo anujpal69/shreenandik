@@ -12,24 +12,22 @@ include_once './public/lib/common/header.php';
     <div class="container">
         <div class="case-header text-center  wow animate__animated animate__fadeInUp row">
             <div class="col-xl-10 offset-xl-1">
-                <h2 class="title3 black2 animation_title" id="title">Empower Your Business with Custom App Development</h2>
+                <h2 class="title3 black2 animation_title" id="title">Powerful capabilities for 360°
+IT operations management</h2>
                 <p class="Atext pt-5">
-                    shreenandik offers a comprehensive suite of services to empower businesses with transformative
-                    Artificial Intelligence and Machine Learning capabilities. From revolutionizing user experiences to
-                    automating processes, our expertise spans across various domains to deliver high-quality and precise
-                    solutions. Leveraging quantifiable AI/ML algorithms, we enable sophisticated trend identification
-                    aligned with process objectives and goals, ensuring optimal outcomes for our clients.
+                    Get code-level insights into application performance, identify bottlenecks, optimize resource allocation, 
+                    and deliver consistently exceptional user experiences.Distributed transaction tracing helps you monitor
+                     application-wide transactions. Detect and mitigate anomalies using base-lining techniques and identify
+                      application slowdowns across locations.Perform real user monitoring and understand the user's journey through 
+                      your web applications and websites and capture the satisfaction level of real users through metrics.
                 </p>
                 <p class="Atext">
-                    With expertise in machine learning (ML), natural language understanding (NLU), visual search, image
-                    recognition, and text-to-speech (TTS) technologies, we provide tailored solutions to meet diverse
-                    business needs. Whether it's developing LLM applications, crafting conversational AI chatbots,
-                    custom ChatGPT development, or creating AI assistants on Own Data/RAG, we are committed to helping
-                    organizations achieve new heights of success through strategic AI and ML implementations. Partner
-                    with shreenandik to embark on your AI journey and unlock limitless possibilities for your business.
+                    Use apdex graphs to track critical end user transactions and be aware of the 
+                    performance of business-critical network services.Create better customer experiences by
+                     delivering detailed insights into web transactions, user sessions, AJAX calls, Javascript errors, etc.
                 </p>
             </div>
-            <!-- <a href="contact" class="btn btn-default _button themeBtn" type="button">Start a Project</a> -->
+            <!-- <a href="contact.php"class="btn btn-default _button themeBtn" type="button">Start a Project</a> -->
         </div>
     </div>
 </section>
@@ -39,7 +37,13 @@ include_once './public/lib/common/header.php';
     <div class="container">
         <div class="case-header text-center pb-5 wow animate__animated animate__fadeInUp row">
             <div class="col-xl-10 offset-xl-1">
-                <h2 class="title3 black2 animation_title">Empower Your Business with Custom App Development</h2>
+                <h2 class="title3 black2 animation_title">Overview & Our Services</h2>
+                 <p class="Atext">
+                    We harness the power of digital engineering to turns business goals into real results. 
+                    Our services are designed to accelerate innovation, drive continuous improvement,
+                     and support sustainable growth make the digital journey smooth, smart, and reliable.
+                     
+                </p>
             </div>
         </div>
         <div class="row">
@@ -47,38 +51,63 @@ include_once './public/lib/common/header.php';
             <div class="main-timeline">
                 <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <h3 class="title">Web Designing</h3>
+                        <h3 class="title">Product Engineering</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                           Product Engineering
                         </p>
-                        <div class="timeline-year">1</div>
+                        <p class="description">
+                        Product Strategy Consulting
+                        </p>
+                        <p class="description">
+                          Quality Engineering
+                        </p>
+                        <!-- <div class="timeline-year">1</div> -->
                     </a>
                 </div>
                 <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <h3 class="title">Web Development</h3>
+                        <h3 class="title">Technology Agnostic Development</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                           API-first Development
                         </p>
-                        <div class="timeline-year">2</div>
+                        <p class="description">
+                          Open-source Development
+                        </p>
+                        <p class="description">
+                           Microservices & Composable Architecture
+                        </p>
+                        <!-- <div class="timeline-year">2</div> -->
                     </a>
                 </div>
-                <div class="timeline">
+               
+                 <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <h3 class="title">Web Development</h3>
+                        <h3 class="title">Application Modernization</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                          Migration & Modernization
                         </p>
-                        <div class="timeline-year">2</div>
+                        <p class="description">
+                         Product Optimization
+                        </p>
+                        <p class="description">
+                         Infrastructure Modernization
+                        </p>
+                        <!-- <div class="timeline-year">2</div> -->
                     </a>
                 </div>
-                <div class="timeline">
+                 <div class="timeline">
                     <a href="#" class="timeline-content">
-                        <h3 class="title">Web Development</h3>
+                        <h3 class="title">Cloud & DevOps</h3>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                          Migrate to Cloud
                         </p>
-                        <div class="timeline-year">2</div>
+                        <p class="description">
+                          Cloud Optimization
+                        </p>
+                        <p class="description">
+                          DevOps & CI/CD
+                        </p>
+                        <!-- <div class="timeline-year">2</div> -->
                     </a>
                 </div>
             </div>
@@ -92,8 +121,8 @@ include_once './public/lib/common/header.php';
         <div class="row row-handle">
             <div class="col-lg-6">
                 <div class="content_highlight">
-                    <h2 class="title4 black1">Automating the entire process with Artificial Intelligence</h2>
-                    <p class="Atext pt-2">Artificial Intelligence has just moved to the world of reality from science fiction stories. AI lets the products to work smarter and not harder, by automating the entire process and lifecycle.</p>
+                    <h2 class="title4 black1">Enterprise ready monitoring for distributed IT environments</h2>
+                    <p class="Atext pt-2">OpManager Plus Enterprise Edition empowers you to manage your sprawling IT infrastructure with ease. Our unified console provides real-time visibility into every layer, from user experience to network health. With proactive change tracking and robust IP address management, you can streamline operations and drive business growth, no matter how geographically distributed your enterprise may be.</p>
                     <p class="Atext">
                         AI has just evolved like a weed in recent years and entered a new era of unseen possibilities. We now have self-controlled drones, self-moving bicycles, and even self-controlled vehicles; which can highlight what Artificial Intelligence is capable of doing in a real-world scenario in this day.
                     </p>
@@ -102,14 +131,11 @@ include_once './public/lib/common/header.php';
                         Artificial Intelligence
                     </p>
                     <p class="Atext">
-
-                        AI brings in the idea of making machines works like human by adding smarter behaviour to them which helps to automate the processes and makes the product even more reliable.
-
-                        The world is moving at a faster pace and businesses are creating products using Artificial Intelligence as a perk, letting their users have a more rich and more personalized experience.
+                       We build intelligent, scalable technology solutions that move businesses forward. Our AI-driven frameworks, rapid engineering models, and deep domain expertise empower us to solve complex challenges with precision. From concept to continuous innovation, we deliver solutions designed for real-world impact. Explore the technologies that power our solutions:
                     </p>
-                    <h3 class="title4 black1">Conversational AI Commerce</h3>
+                    <h3 class="title4 black1">What We Offer</h3>
                     <p class="Atext">Make your Business future-ready by enabling an Artificial Intelligence-Based Smart Conversational Chat Bot! Now technologies are ripened enough to enable the ChatBot feature which is effectively used in business to automate manual tasks. Time is money and a business utilizes it in the best possible way so as to maximize the profit in a limited period ChatBot Technology act as a Boon to them.</p>
-                    <p class="Atext">Gartner forecasts that by 2020, over 85% of customer interactions will be handled without a human and indeed due to this automated task the ChatBot technology has remarkably improved a Customer Service Experience with instant support and definite answers. Smart ChatBot can easily recognize Customers’ queries and answer them as per the context. It provides a human touch on interaction, which draws customers’ engagement and thus profits the business.</p>
+                    <!-- <p class="Atext">Gartner forecasts that by 2020, over 85% of customer interactions will be handled without a human and indeed due to this automated task the ChatBot technology has remarkably improved a Customer Service Experience with instant support and definite answers. Smart ChatBot can easily recognize Customers’ queries and answer them as per the context. It provides a human touch on interaction, which draws customers’ engagement and thus profits the business.</p> -->
                 </div>
             </div>
             <div class="col-lg-6">
@@ -125,7 +151,7 @@ include_once './public/lib/common/header.php';
     <div class="container">
         <div class="case-header text-center  mb-5 wow animate__animated animate__fadeInUp row">
             <div class="col-xl-10 offset-xl-1">
-                <h2 class="title3 black2">FAQ's about App Development</h2>
+                <h2 class="title3 black2">Commonly Asked Questions</h2>
             </div>
         </div>
         <div class="row">
@@ -133,21 +159,21 @@ include_once './public/lib/common/header.php';
                 <div class="faq-content">
                     <div class="accordion">
                         <div class="accordion-item">
-                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is app development?</span><span class="icon" aria-hidden="true"></span></button>
+                            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">How can ShreeNandik IT developers support my business goals?</span><span class="icon" aria-hidden="true"></span></button>
                             <div class="accordion-content">
-                                <p>App development is the process of creating software applications for mobile devices (such as smartphones and tablets) or web platforms. It involves designing, coding, testing, and deploying applications to meet specific user needs or business objectives.</p>
+                                <p>ShreeNandik IT developers create custom software solutions that align perfectly with your business objectives, driving efficiency and growth. Our team takes time to understand your operational challenges, market needs, and long-term vision before developing tailored applications. By leveraging the latest technologies, agile practices, and seamless integrations, our IT developers ensure your systems work smarter, not harder — helping you reduce costs, improve productivity, and gain a competitive advantage.</p>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What types of apps can be developed?</span><span class="icon" aria-hidden="true"></span></button>
+                            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Does ShreeNandik provide end-to-end software design and development?</span><span class="icon" aria-hidden="true"></span></button>
                             <div class="accordion-content">
-                                <p> App development encompasses various types of applications, including mobile apps for iOS and Android platforms, web apps that run in web browsers, desktop apps for Windows or macOS, and cross-platform apps that work across multiple devices and operating systems.</p>
+                                <p> Yes, ShreeNandik offers complete software design and development services, from concept to deployment, ensuring cohesive and impactful results. We handle everything — requirement gathering, UI/UX design, architecture planning, coding, quality testing, and post-launch support. Our design team ensures an engaging user experience, while our development experts deliver secure, scalable, and high-performing solutions. This integrated approach saves you time, minimizes risk, and ensures your project stays on track from start to finish.</p>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What are the steps involved in app development?</span><span class="icon" aria-hidden="true"></span></button>
+                            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How does ShreeNandik ensure quality in software development IT projects?</span><span class="icon" aria-hidden="true"></span></button>
                             <div class="accordion-content">
-                                <p>The app development process typically includes several stages, such as defining requirements, designing the user interface (UI) and user experience (UX), developing the app's functionality, testing for bugs and errors, and deploying the app to users. Continuous maintenance and updates may also be necessary after launch.</p>
+                                <p>We implement best practices, modern tools, and thorough testing in every software development IT project to ensure performance and reliability. ShreeNandik follows a multi-layered quality assurance process that includes automated testing, manual verification, code reviews, and continuous monitoring. Our team works closely with you to define success metrics early on, ensuring that every release meets both technical standards and business goals. This commitment to quality means fewer bugs, faster deployment, and higher user satisfaction.</p>
                             </div>
                         </div>
                         <div class="accordion-item">
@@ -157,9 +183,9 @@ include_once './public/lib/common/header.php';
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What factors should I consider when choosing an app development company?</span><span class="icon" aria-hidden="true"></span></button>
+                            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How experienced are ShreeNandik IT software developers?</span><span class="icon" aria-hidden="true"></span></button>
                             <div class="accordion-content">
-                                <p>When selecting an app development company, consider factors such as the company's experience and expertise, portfolio of previous projects, technologies and platforms they specialize in, development process and methodologies, communication and collaboration practices, and client testimonials or references. It's essential to choose a reliable partner who can understand your requirements and deliver high-quality results within your budget and timeline.
+                                <p>Our IT software developers have extensive experience in multiple tech stacks, ensuring robust and scalable solutions for your business. Each developer at ShreeNandik is well-versed in modern programming languages, cloud platforms, API integrations, and security best practices. With experience across diverse domains — from fintech to e-commerce — they bring not just technical expertise but also industry-specific insights. This combination allows us to develop solutions that are not only technically sound but also strategically aligned with your market needs.
                                 </p>
                             </div>
                         </div>
@@ -175,7 +201,7 @@ include_once './public/lib/common/header.php';
         <div class="row">
             <div class="col-md-8 offset-md-2 px-2">
                 <h2 class="title3 white1">We are ready to work and build on-demand solution for your business.</h2>
-                <a href="contact" class="btn btn-default _button get_start mt-3">Get Started</a>
+                <a href="contact.php" class="btn btn-default _button get_start mt-3">Get Started</a>
             </div>
         </div>
     </div>

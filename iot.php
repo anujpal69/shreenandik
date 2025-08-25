@@ -29,7 +29,7 @@ include_once './public/lib/common/header.php';
                     with shreenandik to embark on your AI journey and unlock limitless possibilities for your business.
                 </p>
             </div>
-            <!-- <a href="contact" class="btn btn-default _button themeBtn" type="button">Start a Project</a> -->
+            <!-- <a href="contact.php"class="btn btn-default _button themeBtn" type="button">Start a Project</a> -->
         </div>
     </div>
 </section>
@@ -182,7 +182,7 @@ include_once './public/lib/common/header.php';
         <div class="row">
             <div class="col-md-8 offset-md-2 px-2">
                 <h2 class="title3 white1">We are ready to work and build on-demand solution for your business.</h2>
-                <a href="contact" class="btn btn-default _button get_start mt-3">Get Started</a>
+                <a href="contact.php"class="btn btn-default _button get_start mt-3">Get Started</a>
             </div>
         </div>
     </div>
